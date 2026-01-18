@@ -1,0 +1,13 @@
+apiVersion: sloth.slok.dev/v1
+kind: PrometheusServiceLevel
+metadata:
+  name: llm-latency-slo
+spec:
+  service: "llm-inference"
+  slos:
+  - name: latency
+    objective: 99.5
+    sli:
+      events:
+        errorQuery: latency_seconds_bucket{le="1"}
+        totalQuery: latency_seconds_count
