@@ -25,8 +25,5 @@ Client → Ingress → LLM Pods
 2. Apply inference and rollout YAMLs
 3. Monitor metrics via Prometheus & Grafana
 
-## Interview Pitch
-> I designed a GenAI platform where model deployments are rolled out gradually using canary strategies and validated against latency SLOs to ensure reliability.
-
 ## Author
 Mahi – SRE / DevOps Engineer
